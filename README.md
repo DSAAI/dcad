@@ -1,17 +1,37 @@
+# Dual-channel Graph-level Anomaly Detection Method Based on Multi-Graph Representation Learning
+
+This repository contains the source code for the paper titled "Dual-channel Graph-level Anomaly Detection Method Based on Multi-Graph Representation Learning." The code implements our proposed method for detecting anomalies in graph data using multi-graph representation learning techniques.
+
+## Table of Contents
+- [Code Structure](#code-structure)
+- [Dataset Directory](#dataset-directory)
+- [Model Code Directory](#model-code-directory)
+- [Illustrations](#illustrations)
+- [Citation](#citation)
+
+## Code Structure
+
+├── data/
+│ └── Datasets/ # Place your datasets here
+├── model/
+│ └── DCADAnomaly.py # Our Model
+│ └── GIN.py # Compared Model 
+│ └── ocgin.py # Compared Model 
+│ └── ... # Compared Model 
+│ └── ... # Compared Model 
+├── utils/
+│ ├── functions.py # functions
+└── main.py #  main file
+
+
 ## Dataset Directory
 
-The datasets used for experiments are located in the `data/` directory. You can create subdirectories for different datasets, e.g., `data/dataset_name/`, and place your dataset files there.
+The datasets used for experiments are located in the `data/` directory. You can create subdirectories for different datasets, e.g., `data/Datasets/`, and place your dataset files there.
 
 ## Model Code Directory
 
-The model implementation can be found in the `models/` directory. The main file, `model.py`, contains the architecture and training routines for our dual-channel graph-level anomaly detection method.
+The model implementation can be found in the `model/` directory. The main file, `DCADAnomaly.py`, contains the architecture and training routines for our dual-channel graph-level anomaly detection method. The other .py files are the code for the baseline model.
 
-## Main Content and Modules
-
-- **Data Preprocessing**: The `utils/preprocess.py` file includes functions to preprocess the input data into the required format for the model.
-- **Model Training**: The `models/model.py` contains the implementation of the dual-channel graph-level model, including the training and evaluation procedures.
-- **Experiment Configuration**: The `experiments/config.py` file allows users to set various parameters for running experiments.
-- **Running Experiments**: The `experiments/run_experiment.py` script is provided to facilitate the execution of experiments with the specified configuration.
 
 ## Illustrations
 
