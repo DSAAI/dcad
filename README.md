@@ -15,7 +15,7 @@ The model implementation can be found in the `models/` directory. The main file,
 
 ## Illustrations
 
-![Anomaly Detection Framework](dcad.png)  
+![Anomaly Detection Framework](dacd.png)  
 *Figure 1: Overview of the dual-channel anomaly detection framework.*
 
 ## Citation
