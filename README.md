@@ -20,11 +20,17 @@ This repository contains the source code for the paper titled "Dual-channel Grap
 │ └── DCADAnomaly.py # Our Model
 
 │ └── GIN.py # Compared Model 
+
 │ └── ocgin.py # Compared Model 
+
 │ └── ... # Compared Model 
+
 │ └── ... # Compared Model 
+
 ├── utils/
+
 │ ├── functions.py # functions
+
 └── main.py #  main file
 
 
