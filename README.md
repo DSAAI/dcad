@@ -40,4 +40,4 @@ The model implementation can be found in the `model/` directory. The main file, 
 
 ## Citation
 
-
+JING,Y., Chen,J., Chen,X.,Wang,H.: Dual-channel Graph-level Anomaly Detection Method Based on Multi-Graph Representation Learning. Applied Intelligence.
