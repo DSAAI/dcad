@@ -20,9 +20,4 @@ The model implementation can be found in the `models/` directory. The main file,
 
 ## Citation
 
-If you use this code in your research, please cite our paper:  
-@article{your_paper,
-title={Dual-channel Graph-level Anomaly Detection Method Based on Multi-Graph Representation Learning},
-author={Yongjun Jing, Jiale Chen, Xu Chen, Hao Wang*},
-journal={Applied Intelligence},
-}
+
