@@ -12,9 +12,13 @@ This repository contains the source code for the paper titled "Dual-channel Grap
 ## Code Structure
 
 ├── data/
+
 │ └── Datasets/ # Place your datasets here
+
 ├── model/
+
 │ └── DCADAnomaly.py # Our Model
+
 │ └── GIN.py # Compared Model 
 │ └── ocgin.py # Compared Model 
 │ └── ... # Compared Model 
