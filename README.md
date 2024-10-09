@@ -14,14 +14,9 @@ This repository contains the source code for the paper titled "Dual-channel Grap
 ├── data/        
 │ └── Datasets/          #Place your datasets here         
 ├── model/       
-│ └── DCADAnomaly.py     # Our Model       
-│ └── GIN.py             # Compared Model    
-│ └── ocgin.py           # Compared Model      
-│ └── ...                # Compared Model        
-│ └── ...                # Compared Model     
+│ └── tracemgfr.py    # Our Model         
 ├── utils/     
 │ ├── functions.py       # functions     
-└── main.py              #  main file
 
 
 ## Dataset Directory
@@ -30,9 +25,12 @@ The datasets used for experiments are located in the `data/` directory. You can 
 
 ## Model Code Directory
 
-The model implementation can be found in the `model/` directory. The main file, `DCADAnomaly.py`, contains the architecture and training routines for our dual-channel graph-level anomaly detection method. The other .py files are the code for the baseline model.
+The model implementation can be found in the `model/` directory. The main file, `tracemgfr.py  `, contains the architecture and training routines for our dual-channel graph-level anomaly detection method. The other .py files are the code for the baseline model.
 
-
+##  train and evaluate Model
+ 
+ `python model/tracemgfr.py`
+ 
 ## Illustrations
 
 ![Anomaly Detection Framework](dacd.png)  
@@ -40,4 +38,4 @@ The model implementation can be found in the `model/` directory. The main file, 
 
 ## Citation
 
-
+JING,Y., Chen,J., Chen,X.,Wang,H.: Dual-channel Graph-level Anomaly Detection Method Based on Multi-Graph Representation Learning. Applied Intelligence.
