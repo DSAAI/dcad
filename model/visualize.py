@@ -358,13 +358,13 @@ def investigate_model_embeddings(data_name, down_class, second_class, nlayer=5, 
     plt.close()
 
 if __name__ == '__main__':
-    testdataset = MultiGraphTraceTestDataSet(root='/home/cjl/mynet/data/testdata50')
+    testdataset = MultiGraphTraceTestDataSet(root='data/testdata50')
     result_dir = os.path.join("/home/cjl/mynet/test",'OCGIN_Plots', f'mydata1-1-0', f'nlayer5')
     if not os.path.exists(result_dir):
         os.makedirs(result_dir)
     gap = 1
     # visualize full data  可视化所有数据
-    visualize_disperity_full(r"/home/cjl/mynet/test/OCGIN/mydata1-1-0/nlayer-5/seed-1226/timestamp=1690549618.570001_epoch=100_roc_auc=0.903.ckpt", "mydata1",testdataset, 1024, 1, 0, seed = 1228, Model = OCGIN, gap = 1)
+    visualize_disperity_full(r"OCGIN/mydata1-1-0/nlayer-5/seed-1226/timestamp=1690549618.570001_epoch=100_roc_auc=0.903.ckpt", "mydata1",testdataset, 1024, 1, 0, seed = 1228, Model = OCGIN, gap = 1)
     plt.savefig(os.path.join(result_dir, 'overlap_disperity-fulldata-{}-{}-epoch{}-seed{}-timestamp{}.'.format("mydata1", "OCGIN", 8, 1228,1690549618.570001) ))
     plt.close()
 
