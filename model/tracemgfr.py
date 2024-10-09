@@ -354,9 +354,9 @@ class TraceMGFR(pl.LightningModule):
 def train_tracemgfr(normaldata,anomalydataset,testdata,seed,normal_nlayer,abnormal_nlayer,normal_max_epoch,abnormal_max_epoch,normal_batch_size,abnormal_batch_size,dropout = 0,weight_decay = 0):
     timestamp = time.time()
     torch.manual_seed(seed)
-    normaldataset = MultiGraphTraceTrainDataSet(root='/home/cjl/mynet/data/'+ normaldata)
-    anomalydataset = MultiGraphAnomalyDataSet(root='/home/cjl/mynet/data/'+ anomalydataset)
-    testdataset = MultiGraphTraceTestDataSet(root='/home/cjl/mynet/data/'+ testdata)
+    normaldataset = MultiGraphTraceTrainDataSet(root='data/'+ normaldata)
+    anomalydataset = MultiGraphAnomalyDataSet(root='data/'+ anomalydataset)
+    testdataset = MultiGraphTraceTestDataSet(root='data/'+ testdata)
 
     normal_loader = DataLoader(normaldataset, batch_size=normal_batch_size, shuffle=True)
     abnormal_loader = DataLoader(anomalydataset, batch_size=abnormal_batch_size, shuffle=True)
@@ -372,7 +372,7 @@ def train_tracemgfr(normaldata,anomalydataset,testdata,seed,normal_nlayer,abnorm
     shutil.rmtree(working_dir, ignore_errors=True)
     for handler in logging.root.handlers[:]:
         logging.root.removeHandler(handler)
-    logging.basicConfig(format='%(message)s', level=logging.INFO, filename=f'/home/cjl/mynet/test/results/TraceMSFR.log')
+    logging.basicConfig(format='%(message)s', level=logging.INFO, filename=f'data/results/TraceMSFR.log')
     description = f'!Timestamp[{timestamp}] Model[TraceMGFR-{normal_nlayer}-{normal_max_epoch}] Seed[{seed}] Others[{dropout}-{weight_decay}] Data[{normaldata}-{anomalydataset}-{testdata}]'
     logging.info('-' * 50)
     logging.info(description)
